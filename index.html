@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotiseria el Gringo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rotiseria el Gringo</h1>
+    </header>
+
+    <div id="2doTitle">
+        <h2> Configurar Tu Plato</h2>
+    </div>
+
+
+    <div>
+        <label for="fechaPedido">Fecha de Pedido</label>
+        <input type="text" id="fechaPedido">
+    </div>
+
+    <div>
+        <label for="plato">Seleccione Plato</label>
+        <select id="plato" >
+            <option value="hamburgesa doble carne">hamburgesa doble carne</option>
+            <option value="hamburgesa comun">hamburgesa común</option>
+            <option value="hamburgesa infantil">hamburgesa infantil</option>
+        </select>
+        <button id="btnAgregarPlato" onclick="seleccionarPlato()">Agregar</button>
+    </div>
+
+    <div>
+    <label for="ingredientes">Seleccione Ingredientes Adicionales</label>
+    <select id="ingredientes" disabled>
+        <option value="papas">papas</option>
+        <option value="cebollas">cebollas</option>
+        <option value="adherezos">adherezos</option>
+    </select>
+        <button id="btnAgregarIngredientes" disabled onclick="agregarIngredientes()">Agregar</button>
+    </div>
+
+    <div>
+        <label for="tablaPedidos">Tabla de Items a Solicitar</label>
+
+        <table id="tablaPedidos" style="border: 1px solid" style="text-align: center;">
+         <thead>
+            <th>items incluidos</th>
+            <th> cantidad </th>
+            <th> precio </th>
+            <th>acciones</th>
+         </thead>
+         <tbody>
+
+         </tbody>   
+        </table>
+    </div>
+
+    <div style="text-align: center;"  >
+    <button>Enviar al Carrito</button>
+</div>
+
+<script src="scripts.js"> </script>
+</body>
+</html>
